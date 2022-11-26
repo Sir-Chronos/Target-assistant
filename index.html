@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gabriel Vieira Teodoro">
+    <meta name="author" content="Diogo Mello da Crus">
+
+    <title>Target assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="code.js" defer></script>
+
+</head>
+<body class="gradient">
+    <br>
+    <div class="container">
+        <!--Inicio da img-->
+        <div id="box">
+            <img src="SENAI_São_Paulo_logo.png" id="img" class="tela" alt="Try again later" width="100%">
+        </div>
+        <!--Fim da img-->
+        
+         <div id="move-type">
+
+            <label for="img-input" class="input">Select image
+            <input type="file" onchange="changeFile()" accept="image/*" id="img-input">
+            </label>
+
+            <!--Seleciona o tipo de movimento-->
+            <button onclick="type0()">MOV</button>
+            <button onclick="type1()">MVS</button>
+            <button onclick="type2()">MVR</button>
+            <!--Fim de seleção-->
+
+        </div>
+    </div>
+    
+    <!--Saida de dados-->
+    <div id="coordenadas" class="leitura">
+        <p>P1 = (250, 0, 300, 0, 180)</p>
+    </div>
+
+    <div id="prog" class="leitura">
+        <p>MOV P1</p>
+    </div>
+    <!--Fim-->
+</body>
+</html>
