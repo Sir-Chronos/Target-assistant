@@ -1,0 +1,116 @@
+/*CSS do corpo da página*/
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+    background-attachment: fixed;
+    background: rgb(44, 44, 44);
+    overflow-x:hidden;
+    line-height: 10px;
+}
+/*Fim da CSS do corpo da página*/
+
+/*///////////////////////////////////////////////////////////////*/
+
+/*Inicio da CSS das telas */
+#monitor{
+    display: flex;
+    justify-content: center;
+}
+#img{
+    width: 100%;
+    height: 100%;
+}
+#tela-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+    width: 200mm;
+    height: 100mm;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 0px 15px black;
+}
+#tela-zoom{
+    display: block;
+    margin: 10px;
+    margin-bottom: 30px;
+    background: rgb(116, 116, 116);
+    box-shadow: 5px 5px 5px black;
+    height: 50mm;
+    width: 50mm;
+}
+#tela-coordenadas{
+    display: block;
+    margin: 10px;
+    height: 20mm;
+    width: 50mm;
+    background: rgb(184, 184, 184);
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px black;
+    text-align: center;
+}
+.tela{
+    border: 2px solid rgb(255, 230, 0);
+}
+/*Fim da CSS das telas*/
+
+/*//////////////////////////////////////////////////////////////*/
+
+/*Inicio da CSS dos inputs*/
+#configuracao{
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+input,button{
+    display: none;
+}
+label {
+    padding: 10px;
+    margin: 5px;
+    background: rgb(110, 110, 110);
+    color: white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px black;
+    border: 2px solid gold;
+}
+label:hover{
+    background: rgb(119, 119, 119);
+    color: black;
+    box-shadow: 1px 1px 10px rgb(255, 0, 0);
+    box-shadow: 5px 5px 5px rgb(114, 114, 114);
+}
+/*Fim da CSS dos inputs*/
+
+/*///////////////////////////////////////////////////////////////*/
+
+/*Inicio da CSS de saida*/
+#saida{
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    justify-content: center;
+}
+#pontos{
+    display: block;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 10px;
+    background: rgb(116, 116, 116);
+    box-shadow: 5px 5px 5px black;
+    width: 100mm;
+}
+#programa {
+    display: block;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 10px;
+    background: rgb(116, 116, 116);
+    box-shadow: 5px 5px 5px black;
+    width: 100mm;
+}
+/*Fim da CSS da saida*/

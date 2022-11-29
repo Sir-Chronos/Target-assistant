@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Target pointer</title>
+    <link rel="stylesheet" href="css/background.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+<body class="gradient">
+    <!--Seção principal, mostra a imagem e suas coordenadas-->
+    <section id="monitor">
+        <div id="tela-principal" class="tela">
+            <img id="img" src="logo-senai.png" alt="" width="100%">
+        </div>
+
+        <div>
+        <div id="tela-zoom" class="tela"></div>
+
+        <div id="tela-coordenadas" class="tela"><p>Coordenada atual: <br><br> X:0,00  Y:0,00</p></div>
+        </div>
+    </section>
+    <!--Fim da seção principal-->
+
+    <!--Seção de configuração da imagen e do tipo de movimento-->
+    <section id="configuracao">
+        <div>
+            <label for="img-input">Select image
+                <input type="file" onchange="changeFile()" accept="image/*" id="img-input">
+            </label>
+
+            <label id="mov"><button class="pads" onclick="mov ()"></button>MOV</label>
+            <label id="mvs"><button class="pads" onclick="mvs ()"></button>MVS</label>
+            <label id="mvr"><button class="pads" onclick="mvr ()"></button>MVR</label>
+            <label id="afastamento"><button class="pads" onclick="afastamento ()"></button>Afastamento</label>
+            <label id="aproximacao"><button class="pads" onclick="aproximacao ()"></button>Aproximação</label>
+        </div>
+    </section>
+    <!--Fim da seção de configuração-->
+    <section id="saida">
+        <div id="pontos"><p>P1=(250,0,300,0,180)</p></div>
+        <div id="programa"><p>MOV P1</p><p>MVS P2, -50</p></div>
+    </section>
+</body>
+</html>
